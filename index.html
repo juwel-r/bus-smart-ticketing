@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Travels</title>
+    <link
+      rel="shortcut icon"
+      href="./images/bus-icon.png"
+      type="image/x-icon"
+    />
+    <!--Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font awsome-->
+    <script src="https://kit.fontawesome.com/f56a8c511a.js" crossorigin="anonymous"></script>
+
+    <!--Tailwind-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1DD100",
+              text: "rgba(3, 7, 18, 0.5)",
+            },
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter">
+    <header class="w-10/12 mx-auto mt-10">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost font-extrabold text-4xl">My Trsvels</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-primary/20 text-primary px-8 font-bold text-xl border-primary/40">Bus <i class="fa-solid fa-bus"></i></a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Hero banner -->
+      <div class="relative">
+        <section class="bannerX">
+            <div
+              class=" bg-cover bg-no-repeat bg-center"
+              style="
+                background-image: url(./images/banner.png);
+              "
+            >
+              <div class="hero-content text-neutral-content text-center">
+                <div class="w-5/6">
+                  <h1 class="mb-5 mt-16 text-6xl text-white font-extrabold lineh leading-[90px]">End-to-End Travel with <br><span class="text-primary">My Travels</span></h1>
+                  <p class="mb-5 text-lg text-white">
+                    Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                  </p>
+                  <button class="btn bg-primary border-none font-bold text-xl mb-40">Buy Tickets</button>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!--Stats-->
+          <section class="stateX flex gap-8 absolute -bottom-12 left-52">
+            <div class="flex items-center gap-4 py-3 px-6 border-b-4 border-primary rounded-xl bg-white">
+                <div><img src="./images/people.png" alt=""></div>
+                <div class="space-y-3"><h1 class="text-4xl font-extrabold text-black">500K+</h1><p class="text-text">Tickets sold</p></div>
+            </div>
+            <div class="flex items-center gap-4 py-3 px-6 border-b-4 border-primary rounded-xl bg-white">
+                <div><img src="./images/ticket-cupon.png" alt=""></div>
+                <div class="space-y-3"><h1 class="text-4xl font-extrabold text-black">1.7 lacks</h1><p class="text-text">Registered users</p></div>
+            </div>
+            <div class="flex items-center gap-4 py-3 px-6 border-b-4 border-primary rounded-xl bg-white">
+                <div><img src="./images/stoppage.png" alt=""></div>
+                <div class="space-y-3"><h1 class="text-4xl font-extrabold text-black">80K+</h1><p class="text-text">Rental Partners</p></div>
+            </div>
+          </section>
+      </div>
+    </header>
+    <main class="w-10/12 mx-auto">
+        <section class="discountX mt-40 text-center">
+            <h1 class="text-4xl font-bold mb-12">Best offers for you</h1>
+            <div class="flex justify-center gap-8">
+                <div class="bg-[#FFBF0F] flex w-[573px]">
+                    <div class="p-12 flex flex-col items-center justify-center"><h2 class="text-4xl font-extrabold">15% OFF</h2>
+                        <p>15% OFF
+                            on your next purchase <br>
+                            use by January 2024
+                        </p>
+                    </div>
+                    <div class="relative w-12 flex justify-center">
+                        <div class="border-r-2 border-dashed h-full"></div>
+                        <p class="w-12 h-12 absolute bg-white rounded-full -top-7"></p><p class="w-12 h-12 absolute bg-white rounded-full -bottom-7"></p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="text-4xl font-extrabold">NEW15</h2>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] flex w-[573px]">
+                    <div class="p-12"><h2 class="text-4xl font-extrabold">20% OFF</h2>
+                        <p>15% OFF
+                            on your next purchase <br>
+                            use by January 2024
+                        </p>
+                    </div>
+                    <div class="relative w-12 flex justify-center">
+                      <div class="border-r-2 border-dashed h-full"></div>
+                        <p class="w-12 h-12 absolute bg-white rounded-full -top-7"></p><p class="w-12 h-12 absolute bg-white rounded-full -bottom-7"></p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="text-2xl font-extrabold">COUPLE 20</h2>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                </div>
+                <button class="btn btn-outline border-primary text-primary mt-12 font-medium text-xl">See All Offers</button>
+        </section>
+
+        <!--///////////////////seat design section\\\\\\\\\\\\\\\\-->
+        <section
+        class="border-t-2 mt-32 border-primary rounded-[48px] pt-28 text-center bg-[#F7F8F8]"
+      >
+        <h1 class="text-4xl font-bold">My Travells</h1>
+        <p class="max-w-screen-sm mx-auto mt-6 mb-12 text-xl text-text">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+
+        <div class="destination w-10/12 mx-auto bg-white p-8 rounded-2xl flex">
+          <div class="leftT">
+            <div class="topZ flex justify-between text-lg mb-6">
+              <div class="topL flex items-center gap-4">
+                <img class="w-16" src="./images/bus-logo.png" alt="" />
+                <div>
+                  <h3 class="text-3xl font-bold text-left">My Travells</h3>
+                  <p class="text-text">Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div
+                class="topR flex items-center text-primary bg-primary/10 px-4 rounded-xl gap-2"
+              >
+                <img src="./images/seat-green.png" alt="" />
+                <p><span>40</span> Seat Left</p>
+              </div>
+            </div>
+            <div class="bg-gray-50 leftB font-semibold rounded-3xl p-8">
+              <div class="flex justify-between items-center py-6">
+                <p class="text-lg text-text">Route</p>
+                <p class="text-lg">Dhaka - Sylhet</p>
+              </div>
+
+              <div class="w-full border-b-2 border-dashed"></div>
+              <div class="flex justify-between items-center py-6">
+                <p class="text-lg text-text">Departure Time</p>
+                <p class="text-lg">9.00 PM</p>
+              </div>
+              <div class="w-full border-b-2 border-dashed"></div>
+              <div class="pt-6 grid grid-cols-3">
+                <button class="w-56 mx-3 btn text-black/80">
+                  Boarding Point - Laxmipur
+                </button>
+                <button class="w-56 mx-3 btn text-black/80">
+                  Dropping Point - Bogura
+                </button>
+                <button class="w-56 mx-3 btn text-black/80">
+                  Est. Time - 11 Hour
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-12 relative flex flex-col justify-center items-center mx-10"
+          >
+            <div class="h-full border-r-2 border-primary border-dashed"></div>
+            <p class="w-12 h-12 bg-gray-50 absolute -top-14 rounded-full"></p>
+            <p
+              class="w-12 h-12 bg-gray-50 absolute -bottom-14 rounded-full"
+            ></p>
+          </div>
+
+          <div class="priceX flex flex-col items-center justify-center">
+            <img class="w-12 m-1" src="./images/fare.png" alt="fare_img " />
+            <h3 class="font-bold text-3xl">550</h3>
+            <p class="text-text text-xl font-medium">Per Seat</p>
+          </div>
+        </div>
+
+        <!--///////////Seat left section\\\\\\\\\\-->
+        <div
+          class="bg-white w-10/12 mx-auto p-8 rounded-2xl mt-8 grid grid-cols-5"
+        >
+          <div class="leftX col-span-3 mr-7">
+            <h1 class="pb-6 text-left text-2xl font-semibold">
+              Select Your Seat
+            </h1>
+            <div class="w-full border-b-2 border-dashed"></div>
+
+            <!--//////////////Seat avilable or selected\\\\\\\\\\-->
+            <div class="flex justify-between text-text font-semibold p-4">
+                <div class="topR flex items-center rounded-xl gap-2">
+                  <img src="./images/seat-gray.png" alt="" />
+                  <p><span>Avaiable</p>
+                </div>
+    
+                <div class="topR flex items-center rounded-xl gap-1">
+                  <img src="./images/seat-green.png" alt="" />
+                  <p><span>Selected</p>
+                </div>
+              </div>
+              <div class="w-full border-b-2 border-dashed"></div>
+
+              <!--Seat section-->
+              <div class="grid grid-cols-11 justify-between items-center gap-4 pt-4">
+                <p class="col-span-9"></p>
+                <button class="col-span-2 btn"><img src="./images/steering-wheel.png" alt=""></button>
+
+                <!--////////////Row A\\\\\\\\\\\\-->
+                <p class="col-span-1">A</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">A1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">A2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">A3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">A4</button>
+
+               
+                <!--////////////Row B\\\\\\\\\\\\-->
+                <p class="col-span-1">B</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">B1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">B2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">B3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">B4</button>
+
+                <!--////////////Row C\\\\\\\\\\\\-->
+                <p class="col-span-1">C</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">C1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">C2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">C3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">C4</button>
+
+                <!--////////////Row D\\\\\\\\\\\\-->
+                <p class="col-span-1">D</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">D1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">D2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">D3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">D4</button>
+
+                <!--////////////Row E\\\\\\\\\\\\-->
+                <p class="col-span-1">E</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">E1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">E2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">E3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">E4</button>
+
+                <!--////////////Row F\\\\\\\\\\\\-->
+                <p class="col-span-1">F</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">F1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">F2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">F3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">F4</button>
+
+                <!--////////////Row G\\\\\\\\\\\\-->
+                <p class="col-span-1">G</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">G1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">G2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">G3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">G4</button>
+
+                <!--////////////Row H\\\\\\\\\\\\-->
+                <p class="col-span-1">H</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">H1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">H2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">H3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">H4</button>
+
+                <!--////////////Row I\\\\\\\\\\\\-->
+                <p class="col-span-1">I</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">I1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">I2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">I3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">I4</button>
+
+                <!--////////////Row J\\\\\\\\\\\\-->
+                <p class="col-span-1">J</p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">J1</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">J2</button>
+                <p class="col-span-2"></p>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">J3</button>
+                <button class="col-span-2 btn hover:bg-slate-700 hover:text-white transition-colors duration-200 text-text font-medium text-lg">J4</button>
+
+              </div>
+            </div>
+
+
+          <!--/////////Calculation\\\\\\\\\\\-->
+          <div class="leftX col-span-2 flex">
+            <div class="mr-7 h-full border-r-2 border-dashed"></div>
+            <div class="flex-1 flex flex-col gap-4">
+              <div>
+                <h1 class="pb-6 text-left text-2xl font-semibold">
+                  Cost Calculation
+                </h1>
+                <div class="w-full border-b-2 border-dashed"></div>
+              </div>
+
+              <!--////////Seat Specificatio\\\\\\\-->
+              <div class=" bg-gray-50 rounded-xl p-8">
+                <div class="pb-6 text-center font-semibold flex justify-between">
+                  <span class="flex">Seat <span class="bg-primary h-4 px-2 pb-1 rounded-full text-white text-sm">0</span></span><span>Class</span><span>Price</span>
+                </div>
+                <div class="w-full border-b-2 border-dashed"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        33
+      </section>
+    </main>
+  </body>
+</html>
