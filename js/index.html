@@ -406,23 +406,22 @@
               <div class="text-left mt-8">                
                 <label for="PName">Passenger Name*</label>
                 <input class="border rounded-xl outline-primary/20 p-4 w-full mb-6 mt-2" type="text" name="" placeholder="Enter your name" id="PName">
-                <label for="PNumber">Phone Number*</label>
-                <input class="border rounded-xl outline-primary/20 p-4 w-full mb-6 mt-2" type="text" name="" placeholder="Enter your phone number" id="PNumber">
+                <label for="PName">Phone Number*</label>
+                <input class="border rounded-xl outline-primary/20 p-4 w-full mb-6 mt-2" type="text" name="" placeholder="Enter your phone number" id="PName">
 
-                <label for="PEmail">Email ID</label>
-                <input class="border rounded-xl outline-primary/20 p-4 w-full mb-6 mt-2" type="text" name="" placeholder="Enter your email id" id="PEmail">
-                <button id="nextBtn" disabled onclick="" class="btn bg-primary w-full text-white text-xl font-extrabold">Next</button>
+                <label for="PName">Email ID</label>
+                <input class="border rounded-xl outline-primary/20 p-4 w-full mb-6 mt-2" type="text" name="" placeholder="Enter your email id" id="PName">
+                <button disabled onclick="my_modal_1.showModal()" class="btn bg-primary w-full text-white text-xl font-extrabold">Next</button>
                 
                 <!--Modal-->
                 <dialog id="my_modal_1" class="modal">
                   <div class="modal-box">
-                    
-                    <p class="py-4 text-primary/80 font-bold text-2xl text-center">Congeratulations <span id="userName" class="text-primary"></span>!</p>
-                    <p class="text-center text-xl ">Yor Have Booked <span class="font-bold" id="seatCount"></span> Seat Successfully.</p>
+                    <h3 class="text-lg font-bold">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
                     <div class="modal-action">
                       <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
-                        <button onclick="window.location.reload()" class="btn">Close</button>
+                        <button class="btn">Close</button>
                       </form>
                     </div>
                   </div>
